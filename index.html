@@ -2,46 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home </title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">ٍ
-    <script src="./app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="./app.js" defer></script>
 </head>
 
 <body>
-    <header class='header'>
+  <header class="header">
+    <nav class="navbar">
+      <a class="active" href="#"> Home </a>
+      <a href="./Aboutme.html"> About Me </a>
+      <a href="./project.html"> Projects </a>
+      <a href="./contact.html"> Contact </a>
+    </nav>
+    <div>
+      <button id="theme-switcher">
+        <img src="./image/dark-mode.svg" alt="dark mode" />
+        <img src="./image/light-mode.svg" alt="light-mode" />
+      </button>
+    </div>
+  </header>
 
-        <nav class='navbar'>
+  <section class="home">
+    <div class="intro">
+      <h3>Hi , i am</h3>
+      <h1>Alhassan Ali Alshareef</h1>
+      <p>
+        A graduate of King Abdulaziz University, passionate about development,
+        game development, and data analysis
+      </p>
 
-            <a href="#"> Home </a>
-            <a href="./Aboutme.html"> About Me </a>
-            <a href="./project.html"> Projects </a>
-            <a href="./Resume.html"> Resume </a>
-            <a href="./contact.html"> Contact </a>
-        </nav>
-
-    </header>
-
-    <section class='home'>
-        <div class='intro'>
-            <h3> Hi , i am </h3>
-            <h1> Alhassan Ali Alshareef</h1>
-            <p>A graduate of King Abdulaziz University, passionate about
-                <br> development, game development, and data analysis
-            </p>
-
-            <div class=" social">
-                <a href="https://github.com/alhassan-alshareef"> <i class="fa-brands fa-github"></i></a>
-                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/alhassan-alshareef-86b003285/"> <i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class='photo'>
-            <img src="image/alhassan.JPG" alt="Alhassan Ali Alshareef">
-        </div>
-    </section>
+      <div class="social">
+        <a href="https://github.com/alhassan-alshareef">
+          <i class="fa-brands fa-github"></i></a>
+        <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/alhassan-alshareef-86b003285/">
+          <i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="myresume">
+        <a href="./Resume/Alhassan Alshareef__.pdf" class="btn-box"> Download Resume </a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="./image/alhassan.JPG" alt="Alhassan Ali Alshareef" />
+    </div>
+  </section>
 
 </body>
 

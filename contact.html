@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
 </head>
-<body>
-            <header class='header'>
 
-        <nav class='navbar'>
-
-            <a href="./index.html"> Home </a>
+<body class="gradient-background">
+    <header class="header">
+        <nav class="navbar">
+            <a class="active" href="./index.html"> Home </a>
             <a href="./Aboutme.html"> About Me </a>
             <a href="./project.html"> Projects </a>
-            <a href="./Resume.html"> Resume </a>
             <a href="#"> Contact </a>
         </nav>
-
+        <div>
+            <button id="theme-switcher">
+                <img src="./image/dark-mode.svg" alt="dark mode" />
+                <img src="./image/light-mode.svg" alt="light-mode" />
+            </button>
+        </div>
     </header>
+    <section>
+        <div id="message">
+            <form>
+                <h1> Contuct Us </h1>
+
+                <label for="name"> Name </label>
+                <input type="text" id="name" placeholder="Your Name...">
+                <small class="error"> </small>
+
+                <label for="email"> Email </label>
+                <input type="text" id="email" placeholder="Your Email...">
+                <small class="error"> </small>
+
+                <label for="message"> Message </label>
+                <textarea id="message" placeholder="Your Message..." rows="5"> </textarea>
+                <small class="error"> </small>
+
+                <div class="center">
+                    <input type="submit" value=" Send Message ">
+                    <small class="error"> </small>
+
+                    <p id="success"></p>
+
+                </div>
+            </form>
+
+        </div>
+    </section>
 </body>
+
 </html>

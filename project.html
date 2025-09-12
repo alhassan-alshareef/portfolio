@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
 </head>
+
 <body>
-        <header class='header'>
-
-        <nav class='navbar'>
-
-            <a href="./index.html"> Home </a>
+    <header class="header">
+        <nav class="navbar">
+            <a class="active" href="./index.html"> Home </a>
             <a href="./Aboutme.html"> About Me </a>
             <a href="#"> Projects </a>
-            <a href="./Resume.html"> Resume </a>
             <a href="./contact.html"> Contact </a>
         </nav>
-
+        <div>
+            <button id="theme-switcher">
+                <img src="./image/dark-mode.svg" alt="dark mode" />
+                <img src="./image/light-mode.svg" alt="light-mode" />
+            </button>
+        </div>
     </header>
+
+    <section>
+        <h1 class="sub-title"> My <span> Project </span></h1>
+
+        <div class="project1">
+            <h3> Visitsaudi93 </h3>
+            <p> our website will be a "Saudi Arabia Travel and Leisure Guide." This platform will serve as a hub for
+                visitors and locals alike, to explore events, restaurants, cafes, car rentals, and hotels in Saudi
+                Arabia. The site will be user-centric, allowing visitors to log in </p>
+
+        </div>
+
+    </section>
 </body>
+
 </html>
