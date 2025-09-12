@@ -25,20 +25,22 @@
         </div>
     </header>
     <section>
-        <div id="message">
-            <form>
-                <h1> Contuct Us </h1>
+        <div id="all">
+            <!-- https://stackoverflow.com/questions/8664486/javascript-code-to-stop-form-submission -->
+            <form id="contactForm" action="https://getform.io/f/apjzxqza" method="POST"
+                onsubmit="event.preventDefault(); validatForm()">
+                <h1> Contact Us </h1>
 
                 <label for="name"> Name </label>
-                <input type="text" id="name" placeholder="Your Name...">
+                <input type="text" id="name" name="name" placeholder="Your Name...">
                 <small class="error"> </small>
 
                 <label for="email"> Email </label>
-                <input type="text" id="email" placeholder="Your Email...">
+                <input type="text" id="email" name="email" placeholder="Your Email...">
                 <small class="error"> </small>
 
                 <label for="message"> Message </label>
-                <textarea id="message" placeholder="Your Message..." rows="5"> </textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
                 <small class="error"> </small>
 
                 <div class="center">
@@ -46,9 +48,9 @@
                     <small class="error"> </small>
 
                     <p id="success"></p>
-
                 </div>
             </form>
+
 
         </div>
     </section>
