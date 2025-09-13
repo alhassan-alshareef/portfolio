@@ -122,6 +122,7 @@ body {
 
 .intro h1 {
   color: var(--primary-color);
+  text-align: start;
   font-size: 50px;
   font-weight: 700;
   margin: 5px 0;
