@@ -29,6 +29,7 @@
   width: 40px;
   padding: 0;
   border-radius: 50%;
+  /* https://www.w3schools.com/css/css3_variables.asp*/
   background-color: var(--base-variant);
   display: flex;
   justify-content: center;
@@ -197,6 +198,7 @@ body {
 }
 
 
+/*https://animated-gradient-background-generator.netlify.app/*/
 
 .gradient-background {
   background: var(--gradient-bg);
@@ -317,7 +319,8 @@ input[type="submit"] {
   text-align: center;
   font-size: 40px;
   margin-bottom: 30px;
-  color: var(--secondary-color);;
+  color: var(--secondary-color);
+  ;
   margin: 150px 0 30px;
   font-weight: bold;
 }
@@ -427,4 +430,102 @@ input[type="submit"] {
   color: var(--secondary-social-icon);
   box-shadow: 0 0 20px var(--social-icon);
   transition: all 0.3s;
+}
+
+
+
+
+.aboutme {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.aboutme-sec {
+  margin-top: 30px;
+  padding: 120px 40px 40px;
+
+}
+
+.aboutme-sec .photo img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  transition: all 0.2s linear;
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutme-sec .photo img:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 10px 20px var(--image-shadow);
+}
+
+.h4-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 120px 40px 40px;
+}
+
+.mt-2 p {
+  font-family: Arial;
+  font-size: 20px;
+  color: var(--primary-color);
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.skills {
+  background: var(--box);
+  color: var(--secondary-color);
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+
+.skills:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 10px var(--image-shadow);
+}
+
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  color: var(--secondary-color);
+  font-size: 16px;
+
+}
+
+.item img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.iiBCvz {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--secondary-color);
 }
